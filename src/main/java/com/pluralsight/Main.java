@@ -14,22 +14,21 @@ public class Main {
         assets.add(myCar);
 
         for (Asset a : assets){
+            System.out.println("=============================");
             System.out.println(a);
-//            System.out.println("=============================");
-//            System.out.println();
 //            System.out.println("Description: " + a.getDescription());
 //            System.out.println("Date Acquired: " + a.getDateAcquired());
 //            System.out.println("Original Cost: $" + a.getOriginalCost());
 //            System.out.println("Current Value: $" + a.getValue());
 //            if(a instanceof House h){
-//                System.out.println("Address: " + h.getAddress() );
-//                System.out.println();
+////                System.out.println("Address: " + h.getAddress() );
+//                System.out.println(h);
 //            }
 //            if(a instanceof Vehicle v){
-//                System.out.println("Make/Model: " + v.getMakeModel() );
-//                System.out.println();
-//            }
+////                System.out.println("Make/Model: " + v.getMakeModel() );
+//                System.out.println(v);
+            }
         }
 
     }
-}
+

@@ -60,10 +60,13 @@ public class Vehicle extends Asset {
 
     @Override
     public String toString() {
-        return "Vehicle Info: [" +
+        return "Vehicle Info: " +
+                "[ Date Acquired: " + super.getDateAcquired() +
                 " Make and Model: " + makeModel +
                 " || Year: " + year +
                 " || Odometer: " + odometer +
+                " || Original Cost: $" + String.format("%.2f",super.getOriginalCost())+
+                " || Current Cost: $" + String.format("%.2f",getValue()) +
                 " ]";
     }
 }

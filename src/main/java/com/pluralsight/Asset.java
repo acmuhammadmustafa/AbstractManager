@@ -43,9 +43,9 @@ public class Asset {
     @Override
     public String toString() {
         return "Asset Info: " +
-                "[ Description: " + description +
-                " || Date Acquired: " + dateAcquired +
-                " || Original Cost: $" + originalCost +
+                "[ Date Acquired: " + dateAcquired +
+                " || Description: " + description +
+                " || Original Cost: $" + String.format("%.2f",getValue()) +
                 " ]";
     }
 }

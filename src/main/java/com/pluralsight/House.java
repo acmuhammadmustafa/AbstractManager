@@ -65,10 +65,13 @@ public class House extends Asset {
     @Override
     public String toString() {
         return "House Info: " +
-                "[ Address: " + address +
+                "[ Date Acquired: " + super.getDateAcquired() +
+                " || Address: " + address +
                 " || Condition: " + condition +
                 " || Square Foot: " + squareFoot +
                 " || Lot Size: " + lotSize +
+                " || Original Cost: $" + String.format("%.2f",super.getOriginalCost())+
+                " || Current Cost: $" + String.format("%.2f",getValue()) +
                 " ]";
     }
 }
